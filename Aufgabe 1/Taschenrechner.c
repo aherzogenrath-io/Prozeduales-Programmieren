@@ -21,7 +21,7 @@ int minus() {
     return a - b;
 }
 
-float divide() {
+int divide() {
     int a, b = 0;
     printf("Enter first number:\n");
     scanf("%d", &a);
