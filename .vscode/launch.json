@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/arnoherzogenrath/Documents/Projects/FOM/Prozeduales Programmieren/Vorlesung 2",
-      "program": "/Users/arnoherzogenrath/Documents/Projects/FOM/Prozeduales Programmieren/Vorlesung 2/build/Debug/outDebug"
+      "cwd": "/Users/arnoherzogenrath/Documents/Projects/FOM/Prozeduales Programmieren/Aufgabe 1",
+      "program": "/Users/arnoherzogenrath/Documents/Projects/FOM/Prozeduales Programmieren/Aufgabe 1/build/Debug/outDebug"
     }
   ]
 }
