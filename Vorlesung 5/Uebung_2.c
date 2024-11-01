@@ -23,16 +23,16 @@ int main(void)
             {
                 printf("Ihre Zahl:\n");
                 scanf("%d", &input);
-                if (input == zz) // Case unwahrscheinlich --> letzter Case
+                if (input > zz) // Case unwahrscheinlich --> letzter Case
+                {
+                    printf("Your number is too high!");
+                } else if (input < zz)
+                {
+                    printf("Your number is too low!");
+                } else
                 {
                     printf("Correct!\n");
                     break;
-                } else if (input > zz)
-                {
-                    printf("Your number too hight");
-                } else
-                {
-                    printf("Your number too low");
                 }
                     printf("\nLives left: %d\n", i - 1);
 
