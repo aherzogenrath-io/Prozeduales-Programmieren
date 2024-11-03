@@ -64,7 +64,7 @@ int main (void)
         {
             break;
         }
-        printf("\nContinue? (j;J / n;N)\n");
+        printf("\nWeiter? (j;J / n;N)\n");
         scanf(" %c", &weiter);
         switch(weiter)
         {
@@ -76,6 +76,7 @@ int main (void)
                 OK = false;
                 break;
             default:
+                printf("Falscher Input!\n");
                 OK = false;
                 break;
         }

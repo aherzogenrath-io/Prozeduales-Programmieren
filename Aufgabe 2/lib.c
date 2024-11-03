@@ -31,24 +31,24 @@ int f2(void) // Eingabe Zahl 2
 }
 void f3(int a, int b) // Ausgabe Summe
 {
-    printf("Summe: %d\n", a + b);
+    printf("%d + %d = %d\n",a, b, a + b);
 }
 void f4(int a, int b) // Ausgabe Produkt
 {
-    printf("Produkt: %d\n", a * b);
+    printf("%d * %d = %d\n",a, b, a * b);
 }
 void f5(int a, int b) // Ausgabe Subtraktion
 {
-    printf("Subtraktion: %d\n", a - b);
+    printf("%d - %d = %d\n",a, b, a - b);
 }
 void f6(int a, int b) // Ausgabe Division mit Div0 Prüfung
 {
     if (b == 0)
     {
-        printf("Error! Cannot divide by zero\n");
+        printf("Fehler! Divident darf nicht 0 sein\n");
     } else
     {
-        printf("Division: %f\n", (float) a / (float) b);
+        printf("%d / %d = %f\n", a, b, (float) a / (float) b);
     }
 }
 void f7(int a, int b) // Ausgabe aller möglichen Multiplikationen von (1...Zahl1) * (1...Zahl2)
@@ -64,18 +64,18 @@ void f7(int a, int b) // Ausgabe aller möglichen Multiplikationen von (1...Zahl
 }
 void f8(int a) // Quadratwurzel für Zahl1 nach Heron-Verfahren
 {
-    double xn = (double)a / 2;
+    double xn = (double)a;
     // Startwert für Heronverfahren
     double root = sqrt(a);
 
     if (a < 0)
     {
-        printf("Error! Zahl darf nicht negativ sein!\n");
+        printf("Fehler! Zahl darf nicht negativ sein!\n");
     } else
     {
         while ((xn - root) > 0.0000000001) {
             xn = (xn + (a / xn)) / 2;
         }
-        printf("Wurzel: %lf\n", xn);
+        printf("Wurzel aus %d: %lf\n", a, xn);
     }
 }
