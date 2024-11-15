@@ -52,7 +52,7 @@ int main (void)
                 f7(z1, z2);
             break;
             case 8:
-                f8(z1);
+                f8((double)z1);
             break;
             case 9:
                 OK = false;

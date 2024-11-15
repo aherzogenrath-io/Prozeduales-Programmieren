@@ -11,7 +11,7 @@ void f4(int a, int b);
 void f5(int a, int b);
 void f6(int a, int b);
 void f7(int a, int b);
-void f8(int a);
+void f8(double a);
 
 #endif
 
@@ -62,20 +62,18 @@ void f7(int a, int b) // Ausgabe aller möglichen Multiplikationen von (1...Zahl
         printf("\n");
     }
 }
-void f8(int a) // Quadratwurzel für Zahl1 nach Heron-Verfahren
+void f8(double a) // Quadratwurzel für Zahl1 nach Heron-Verfahren
 {
     double xn = (double)a;
-    // Startwert für Heronverfahren
-    double root = sqrt(a);
+    double xn1 = xn;
+    if (a < 0) {
+        printf("Fehler! Zahl darf nicht negatif sein!\n");
+    } else {
+        do {
+            xn = xn1;
+            xn1 = (xn + (a/xn)) / 2;
 
-    if (a < 0)
-    {
-        printf("Fehler! Zahl darf nicht negativ sein!\n");
-    } else
-    {
-        while ((xn - root) > 0.0000000001) {
-            xn = (xn + (a / xn)) / 2;
-        }
-        printf("Wurzel aus %d: %lf\n", a, xn);
+        } while ((xn - xn1) > 0.0000000001);
+        printf("Wurzel aus %d mit Heron verfahren: %lf\n", (int)a, xn1);
     }
 }
