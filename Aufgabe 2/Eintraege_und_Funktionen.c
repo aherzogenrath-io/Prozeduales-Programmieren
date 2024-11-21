@@ -52,7 +52,13 @@ int main (void)
                 f7(z1, z2);
             break;
             case 8:
-                f8((double)z1);
+                if (z1 < 0) {
+                    printf("Fehler! Zahl muss positiv sein");
+                    break;
+                } else {
+                printf("\nWurzel von %d Berechnet mit Heron-Verfahren: %lf\n", z1, f8((double)z1, (double)z1));
+                break;
+                }
             break;
             case 9:
                 OK = false;

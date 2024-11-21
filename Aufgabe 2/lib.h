@@ -8,6 +8,6 @@ void f4(int a, int b);
 void f5(int a, int b);
 void f6(int a, int b);
 void f7(int a, int b);
-void f8(double a);
+double f8(double a, double xn);
 
 #endif
